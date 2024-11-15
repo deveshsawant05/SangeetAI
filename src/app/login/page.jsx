@@ -37,12 +37,13 @@ export default function LoginPage() {
       <Card className="text-[--foreground] w-full max-w-md z-10 bg-[--background]/80 backdrop-blur-md bg-violet-300 bg-opacity-20 m-5">
         <CardHeader className="space-y-1">
           <div className="flex justify-center mb-4">
-            <Logo />
+            <Logo fontSize="text-3xl sm:text-5xl md:text-6xl lg:text-7xl"/>
           </div>
           <CardTitle className="text-xl sm:text-2xl md:text-3xl text-center font-bold">Login to SangeetAI</CardTitle>
         </CardHeader>
         <CardContent>
-          <form onSubmit={()=>{
+          <form onSubmit={(e)=>{
+              e.preventDefault();
               router.push("/dashboard")
             }} 
           className="space-y-4">

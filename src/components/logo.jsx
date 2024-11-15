@@ -9,11 +9,11 @@ const bellota = Bellota({
 });
 
 
-export default function Logo (){
+export default function Logo ({ fontSize = "text-3xl" }){
 
     return(
         <>
-          <h1 className={`${bellota.className} text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-[--primary] font-bold`}>Sangeet<span className="text-[--secondary]">AI</span></h1>
+          <h1 className={`${bellota.className} ${fontSize} text-[--primary] font-bold`}>Sangeet<span className="text-[--secondary]">AI</span></h1>
         </>
     )
 }
