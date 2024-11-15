@@ -94,19 +94,14 @@ export default function LoginPage() {
           <div className="grid grid-cols-2 gap-4 text-[--foreground]">
             <Button variant="outline" className="w-full text-xs sm:text-sm md:text-base">
               <Facebook className="mr-2 h-4 w-4" />
-              Facebook
+              Facebook Login
             </Button>
             <Button variant="outline" className="w-full text-xs sm:text-sm md:text-base">
               <Mail className="mr-2 h-4 w-4" />
-              Google
+              Google Login
             </Button>
           </div>
-          <div className="mt-4 text-center text-xs sm:text-sm md:text-base text-[--foreground]">
-            Don&apos;t have an account?{' '}
-            <Link href="/signup" className="text-[--primary] hover:underline">
-              Sign Up
-            </Link>
-          </div>
+          
         </CardContent>
       </Card>
     </div>
