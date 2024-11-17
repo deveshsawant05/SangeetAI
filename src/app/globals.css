@@ -107,3 +107,45 @@ body {
   background: var(--background);
   width:10px;
 }
+
+/* Key frames for floating divs */
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(50px, -30px);
+  }
+  20% {
+    transform: translate(-40px, 60px);
+  }
+  30% {
+    transform: translate(70px, -50px);
+  }
+  40% {
+    transform: translate(-60px, 30px);
+  }
+  50% {
+    transform: translate(30px, -70px);
+  }
+  60% {
+    transform: translate(-20px, 40px);
+  }
+  70% {
+    transform: translate(60px, -20px);
+  }
+  80% {
+    transform: translate(-50px, 50px);
+  }
+  90% {
+    transform: translate(40px, -60px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.animate-float {
+  animation: float 100s infinite ease-in-out;
+}
+
