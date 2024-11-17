@@ -169,7 +169,7 @@ export default function Component() {
               <Palette className="h-5 w-5" />
               Appearance
             </CardTitle>
-            <CardDescription>Customize the app's appearance</CardDescription>
+            <CardDescription>Customize the app&apos;s appearance</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="flex items-center justify-between">
